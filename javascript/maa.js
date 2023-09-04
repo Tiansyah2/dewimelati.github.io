@@ -1,6 +1,4 @@
 // audio
-
-<<<<<<< HEAD
 var myaudio = document.getElementById("audioID");
 
     function play() { 
@@ -10,12 +8,10 @@ var myaudio = document.getElementById("audioID");
     function stop() {
     return myaudio.pause(); 
     };
-=======
 function playMusic(audioId) {
   const audio = document.getElementById(audioId);
   audio.play();
 }
->>>>>>> 822295d (perbarui)
 
 // show or hide
 
@@ -50,8 +46,6 @@ const animateButton = document.getElementById('container');
 animateButton.addEventListener('click', () => {
   content.classList.toggle('animating'); // Tambah atau hilangkan kelas "animating"
 });
-<<<<<<< HEAD
-=======
 
   // Fungsi untuk menampilkan konten dengan animasi setelah jeda waktu
   function showContentWithDelay() {
@@ -99,6 +93,3 @@ const button = document.querySelector(".button");
           button.classList.remove("animate");
         }, 200);
       });
-
- 
->>>>>>> 822295d (perbarui)
