@@ -1,4 +1,5 @@
 // audio
+
 var myaudio = document.getElementById("audioID");
 
     function play() { 
@@ -47,13 +48,13 @@ animateButton.addEventListener('click', () => {
   content.classList.toggle('animating'); // Tambah atau hilangkan kelas "animating"
 });
 
-  // Fungsi untuk menampilkan konten dengan animasi setelah jeda waktu
+// Fungsi untuk menampilkan konten dengan animasi setelah jeda waktu
   function showContentWithDelay() {
     const content = document.getElementById("container");
     
     setTimeout(function() {
       content.classList.add("visible-content"); // Tambahkan kelas yang membuat konten terlihat
-    }, 10000); // Jeda waktu dalam milidetik (contoh: 2 detik)
+    }, 360000); // Jeda waktu dalam milidetik (contoh: 2 detik)
   }
 
   // Panggil fungsi untuk menampilkan konten
@@ -79,7 +80,7 @@ function showNextSentence() {
     sentenceElement.hidden = true;
     nextButton.disabled = true;
     nextButton.hidden = true;
-    contentContainer.removeAttribute("hidden"); // Menghapus atribut 'hidden' untuk menampilkan konten selanjutnya
+    contentContainer.removeAttribute("hidden");
   }
 }
 

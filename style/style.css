@@ -1,34 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-
-
 body {
         background: pink;
         height: 100%;
         margin: 0;
-        align-items: center;
-        justify-content: center;
       }
 
-        /* Gaya awal elemen konten */
-        .hidden-content {
-        opacity: 0; /* Atur opasitas menjadi 0 untuk elemen yang disembunyikan */
-        transition: opacity 10s ease; /* Animasi opasitas selama 0.5 detik */
-      }
-    
-      /* Gaya untuk elemen konten yang akan ditampilkan */
-        .visible-content {
-        opacity: 1; /* Atur opasitas menjadi 1 untuk elemen yang akan ditampilkan */
-      }
-
-      #sentenceContainer {
-        font-family: "Poppins", sans-serif;
-
-      }
     
     /* hide and show */
     
     body div .slider .wrapper {
             display: none;
+    }
+
+    /* Gaya awal elemen konten */
+    .hidden-content {
+        opacity: 0;
+        transition: opacity 10s ease;
+    }
+
+    /* Gaya untuk elemen konten yang akan ditampilkan */
+    .visible-content {
+        opacity: 1;
     }
     
     /* animating */
@@ -56,10 +47,101 @@ body {
             box-sizing: border-box;
             display: inline-block;
     }
+    
+    .slider{
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            width: 100px;
+            height: 130px;
+            margin-left: 15px;
+    }
 
-/* button */
+    #sentenceContainer {
+        font-family: "Poppins", sans-serif;
+    }
 
-.button {
+    #sentence {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+        }
+    
+    
+    #animasi {
+            opacity: 0; /* Nilai awal opasitas 0 */
+            animation: fadeIn 50s infinite; /* Animasi muncul selama 1 detik */
+    }
+    
+    .slider .satu {
+            transform-style: preserve-3d;
+            animation: rotate 17s linear infinite;
+    }
+    
+    .slider .dua {
+            transform-style: preserve-3d;
+            animation: rotate 14s linear infinite;
+    }
+    
+    .slider .tiga {
+            transform-style: preserve-3d;
+            animation: rotate 19s linear infinite;
+    }
+    
+    .slider .empat, .lima, .enam, .tujuh, .delapan {
+            position: absolute;
+            transform-style: preserve-3d;
+    }
+    
+    .slider .empat {
+            animation: rotate 18s linear infinite;
+            margin-top: -360px;
+            margin-left: -390px;
+            width: 40px;
+            height: 80px;
+    }
+    
+    .slider .lima {
+            animation: rotate 11s linear infinite;
+            margin-top: -330px;
+            margin-left: -100px;
+            width: 28px;
+            height: 52px;
+    }
+    
+    .slider .enam {
+            animation: rotate 14s linear infinite;
+            margin-top: -160px;
+            margin-left: -360px;
+            width: 34px;
+            height: 60px;
+    }
+    
+    .slider .tujuh {
+            animation: rotate 13s linear infinite;
+            margin-top: -16px;
+            margin-left: -250px;
+            width: 42px;
+            height: 80px;
+    }
+    .slider .delapan {
+            animation: rotate 16s linear infinite;
+            margin-top: 30px;
+            margin-left: -90px;
+            width: 35px;
+            height: 65px;
+    }
+    
+    .wrapper {
+            display: flex;
+    }
+
+    /* button */
+
+        .button {
         position: relative;
         padding: 10px 22px;
         border-radius: 6px;
@@ -142,91 +224,6 @@ body {
         }
       }
 
-      #sentence {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 20px;
-        margin-left: 30px;
-        margin-right: 30px;
-      }
-    
-    .slider{
-            display: none;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-end;
-            width: 100px;
-            height: 130px;
-            margin-left: 15px;
-    }
-    
-    #animasi {
-            opacity: 0; /* Nilai awal opasitas 0 */
-            animation: fadeIn 50s infinite; /* Animasi muncul selama 1 detik */
-    }
-    
-    .slider .satu {
-            transform-style: preserve-3d;
-            animation: rotate 17s linear infinite;
-    }
-    
-    .slider .dua {
-            transform-style: preserve-3d;
-            animation: rotate 14s linear infinite;
-    }
-    
-    .slider .tiga {
-            transform-style: preserve-3d;
-            animation: rotate 19s linear infinite;
-    }
-    
-    .slider .empat, .lima, .enam, .tujuh, .delapan {
-            position: absolute;
-            transform-style: preserve-3d;
-    }
-    
-    .slider .empat {
-            animation: rotate 18s linear infinite;
-            margin-top: -360px;
-            margin-left: -390px;
-            width: 40px;
-            height: 80px;
-    }
-    
-    .slider .lima {
-            animation: rotate 11s linear infinite;
-            margin-top: -330px;
-            margin-left: -100px;
-            width: 28px;
-            height: 52px;
-    }
-    
-    .slider .enam {
-            animation: rotate 14s linear infinite;
-            margin-top: -160px;
-            margin-left: -360px;
-            width: 34px;
-            height: 60px;
-    }
-    
-    .slider .tujuh {
-            animation: rotate 13s linear infinite;
-            margin-top: -16px;
-            margin-left: -250px;
-            width: 42px;
-            height: 80px;
-    }
-    .slider .delapan {
-            animation: rotate 16s linear infinite;
-            margin-top: 30px;
-            margin-left: -90px;
-            width: 35px;
-            height: 65px;
-    }
-    
-    .wrapper {
-            display: flex;
-    }
     
     @keyframes rotate {
             0% {
@@ -389,6 +386,10 @@ body {
         .cover-outer {
             height: 300px;
         }
+
+        .cover-outer img {
+                height: 250px;
+        }
     
         .birthday-card .text .title {
             margin: 40px auto 60px auto;
@@ -415,6 +416,10 @@ body {
             height: 230px;
             font-size: 10px;
             margin-right: 16px;
+        }
+        
+        .button {
+                margin-left: 140px;
         }
     
         .cover-outer {

@@ -3,61 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dewii Love You</title>
-
+    <title>Sukmaa</title>
 </head>
 
     <link rel="stylesheet" href="./style/style.css">
 <body>
 
-<!-- audio -->
-    <audio id="audioID" autoplay loop> <source src="./assets/happy-birthday-music-box (mp3cut.net).mp3"  type="audio/mp3"> 
+    <audio id="music1" loop>
+        <source src="./assets/happy-birthday-music-box (mp3cut.net).mp3" type="audio/mp3">
     </audio>
-    
-<div id="container">
-<audio id="music1" loop>
-    <source src="./assets/happy-birthday-music-box (mp3cut.net).mp3" type="audio/mp3">
-  </audio>
-  
-  <audio id="music2">
-    <source src="./assets/mix_3m14s (audio-joiner.com).mp3" type="audio/mp3">
-  </audio>
+      
+    <audio id="music2">
+        <source src="./assets/mix_3m14s (audio-joiner.com).mp3" type="audio/mp3">
+    </audio>
 
-    <div id="sentenceContainer">
-        <p id="sentence" onclick="playMusic('music2')"><span>Happy Birth Day Dewiii ヾ(＠⌒ー⌒＠)ノ</span><br> Setelah sekian lama berkurang juga usianya wheheheh (｡╯︵╰｡)<br> Ouhh...iyah di sini ada aturan nya yhh yang di mana harus mengikuti apa yang tian bilang okee <br>
-        Nanti ada sesuatu yhh di akhir yang di mana gak ada apa" jadi harus tetep nunggu 6 menit setelah membuka website ini semoga menghibur ❐‿❑ <br> Nah kalo udah baca ini tinggal pilih next yang ada di bawah, jadii baca dulu dan ikutin perkataan dari kata tian yhh :) <br>
-        Dan kalo tidak sesuai perkataan tian tolong bisa di refresh ajahh (＞﹏＜)<br>Jangan cepet" baca na yhh satu" aja soal nya tian udah setting di 6 menit teh udah bisa di prediksi kok kalo baca na satu" mah keburu<br>Udah sok pencet nextt, kita ngejar waktu 6 menit o((*^▽^*))o
-        </p>
-        <button class="button" id="nextButton" onclick="showNextSentence()">Next ==></button>
-      </div>
+
+
+<div id="sentenceContainer">
+    <p id="sentence" onclick="playMusic('music2')"><span>Happy Birth Day Dewiii ヾ(＠⌒ー⌒＠)ノ</span><br> Setelah sekian lama berkurang juga usianya wheheheh (｡╯︵╰｡)<br> Ouhh...iyah di sini ada aturan nya yhh yang di mana harus mengikuti apa yang tian bilang okee <br>
+    Nanti ada sesuatu yhh di akhir yang di mana gak ada apa" jadi harus tetep nunggu 6 menit setelah membuka website ini semoga menghibur ❐‿❑ <br> Nah kalo udah baca ini tinggal pilih next yang ada di bawah, jadii baca dulu dan ikutin perkataan dari kata tian yhh :) <br>
+    Dan kalo tidak sesuai perkataan tian tolong bisa di refresh ajahh (＞﹏＜)<br>Jangan cepet" baca na yhh satu" aja soal nya tian udah setting di 6 menit teh udah bisa di prediksi kok kalo baca na satu" mah keburu<br>Udah sok pencet nextt, kita ngejar waktu 6 menit o((*^▽^*))o
+    </p>
+    <button class="button" id="nextButton" onclick="showNextSentence()">Next ==></button>
+</div>
     
 <div id="container" class="hidden-content" hidden>
-<div class="birthday-card" id="card">
+    <div class="birthday-card" id="card">
         <!-- Inner -->
         <div class="cover-inner">
             <img src="./assets/maa.png" width="100%">
         </div>
 
         <!-- Outer -->
-    <div class="cover-outer" onclick="play()">
-        <div class="cover-outer" onclick="playMusic('music1')">
-            <img src="https://images.esellerpro.com/3274/I/318/37/lrgscaleAO002.jpg" onclick="showOrHide()" width="100%" height="100%">
+        <div class="cover-outer">
+            <div onclick="playMusic('music1')">
+                <img src="https://images.esellerpro.com/3274/I/318/37/lrgscaleAO002.jpg" onclick="showOrHide()" width="100%" height="100%">
+            </div>        
         </div>
 
-            <!-- Text -->
-            <div class="text">
-                <p class="title">
-                    Happy Birthday! <br> Dewiiii
-                </p>
-                <p>
-                    Whehehe SUPRISEE!!!, <br> Semogaa panjang umur dan sehat selalu dan di mudahkan rezekinya aminn,
-                    love you, and fun.
-                    You deserve them a lot. Enjoy!
-                </p>
-                <p>SEMOGA DI KABULKAN SEGALA KEINGINAN NYA <br> MESKIPUN HARUS BERJUANG DULU YHHH:)</p>
-            </div>
+        <!-- Text -->
+        <div class="text">
+            <p class="title">
+                Happy Birthday! <br> Sukmaaaaa
+            </p>
+            <p>
+                Whehehe SUPRISEE!!!, <br> Semogaa panjang umur dan sehat selalu dan di mudahkan rezekinya aminn,
+                love you, and fun.
+                You deserve them a lot. Enjoy!
+            </p>
+            <p>SEMOGA DI KABULKAN SEGALA KEINGINAN NYA <br> MESKIPUN HARUS BERJUANG DULU YHHH:)</p>
+        </div>
     </div>
-
+</div>
 
 <!-- card -->
 <div class="slider" id="animasi">
