@@ -53,7 +53,7 @@ animateButton.addEventListener('click', () => {
     
     setTimeout(function() {
       content.classList.add("visible-content"); // Tambahkan kelas yang membuat konten terlihat
-    }, 360000); // Jeda waktu dalam milidetik (contoh: 2 detik)
+    }, 10000); // Jeda waktu dalam milidetik (contoh: 2 detik)
   }
 
   // Panggil fungsi untuk menampilkan konten
